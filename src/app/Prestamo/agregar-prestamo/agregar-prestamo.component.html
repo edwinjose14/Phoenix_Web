@@ -1,0 +1,61 @@
+<section class="content">
+    <h2>Agregar Usuarios</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box box-primary">
+                <div class="box-body">
+                    <div class="form-group">
+                        <Label><b>Registro:</b></Label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="tiquete.identificacion" class="form-control"
+                            placeholder="Ingrese Identificacion">
+                    </div>
+                    <div class="form-group">
+                        <label><b>Identificacion Usuario:</b></label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="tiquete.nombre" class="form-control" placeholder="Ingrese Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label><b>Codigo Libro:</b></label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="tiquete.nombre" class="form-control" placeholder="Ingrese Apellido">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="box box-primary">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label><b>Fecha Salida:</b></label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="tiquete.domicilio" type="date"class="form-control" placeholder="Ingrese Telefono">
+                    </div>
+                    <div class="form-group">
+                        <label><b>Estado:</b></label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="tiquete.domicilio" class="form-control" placeholder="Ingrese Direccion">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tablaBotones">
+        <table>
+            <tr>
+                <td>
+                    <button (click)="Add()" class="btn btn-primary">Registrar</button>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <button class="btn btn-danger">Cancelar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>

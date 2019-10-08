@@ -1,0 +1,43 @@
+<section class="content">
+    <h2>Agregar Usuarios</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box box-primary">
+                <div class="box-body">
+                    <div >
+                        <Label><b>Id Autor:</b></Label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="tiquete.identificacion" class="form-control" placeholder="Ingrese Id Autor">
+                    </div>
+                    <div >
+                        <label><b>Nombre:</b></label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="tiquete.nombre" class="form-control" placeholder="Ingrese Nombre">
+                    </div>
+                    <div >
+                        <label><b>Nacionalidad:</b></label>
+                    </div>
+                    <div class="form-group">
+                        <input [(ngModel)]="tiquete.nombre" class="form-control" placeholder="Ingrese Nacionalidad">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tablaBotones">
+        <table>
+            <tr>
+                <td>
+                    <button (click)="Add()" class="btn btn-primary">Registrar</button>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <button class="btn btn-danger">Cancelar</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
